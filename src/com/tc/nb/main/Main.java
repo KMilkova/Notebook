@@ -21,15 +21,6 @@ public class Main {
 	public static void main(String[] args) throws IOException, ParseException {
 		List<Note> notes = new ArrayList<Note>();
 		DAOProvider provider = DAOProvider.getInstance();
-//
-//		
-//		notes = provider.getNotesDAO().load();
-
-		// List<Note> newNotes = provider.getNotesDAO().load();
-//
-//		for (Note n : notes) {
-//			System.out.println(n.toString());
-//		}	
 		NotesView nView = new NotesView();
 		NotesFindServiceImpl findService = new NotesFindServiceImpl();
 		NotesCreateServiceImpl createService = new NotesCreateServiceImpl();
